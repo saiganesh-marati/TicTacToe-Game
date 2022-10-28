@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <style>
+            .form
+            {
+                background-color:pink ;
+                
+            }
+            h1
+            {
+                background-color: black;
+                color: red;
+            }
+            p
+            {
+                color:blue;
+                background-color:yellow;
+            }
+        </style>
+    </head>
+    <body bgcolor="cyan">
+        <center>
+        <h1 >Welcome to world of Tic Tac Toe</h1>
+    
+        <p>player one will start  with x and player 2 will start with o</p>
+        
+        <form name="f1" class="form" >
+            
+            <table cellspace="2">
+                <tr >
+                    <td>
+                        <input type="text" id="a" onclick="fun1();logic()">
+                        <input type="text" id="b"onclick="fun2();logic()">
+                        <input type="text" id ="c"onclick="fun3();logic()">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>      
+                    <input type="text" id="d"onclick="fun4();logic()">
+                    <input type="text" id="e"onclick="fun5();logic()">
+                    <input type="text" id="f"onclick="fun6();logic()">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input typ="text" id="g" onclick="fun7();logic()">
+                        <input type="text" id="h" onclick="fun8();logic()">
+                        <input type="text" id ="i"onclick="fun9();logic()">
+                    </td>
+                </tr>
+
+                <tr>
+                        <td> <input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+        </center>
+
+        <script>
+            flag=1;
+            function fun1()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("a").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("a").value="o";
+                    flag=1;
+                }
+
+            }
+            
+            function fun2()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("b").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("b").value="o";
+                    flag=1;
+                }
+
+    
+            }
+
+
+            
+            function fun3()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("c").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("c").value="o";
+                    flag=1;
+                }
+
+            }
+
+
+            
+            function fun4()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("d").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("d").value="o";
+                    flag=1;
+                }
+
+            }
+
+
+
+
+            
+            function fun5()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("e").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("e").value="o";
+                    flag=1;
+                }
+
+            }
+
+
+
+
+
+
+            
+            function fun6()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("f").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("f").value="o";
+                    flag=1;
+                }
+
+            }
+
+
+
+
+
+            
+            function fun7()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("g").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("g").value="o";
+                    flag=1;
+                }
+
+            }
+
+
+            
+            function fun8()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("h").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("h").value="o";
+                    flag=1;
+                }
+
+            }
+
+
+
+
+            
+            function fun9()
+            {
+                if(flag==1) 
+                {
+                    document.getElementById("i").value="x";
+                    flag=0;
+                }
+                else
+                {
+                    document.getElementById("i").value="o";
+                    flag=1;
+                }
+
+            }
+
+            function logic()
+            {
+                ele1=document.getElementById("a").value;
+                ele2=document.getElementById("b").value;
+                ele3=document.getElementById("c").value;
+                ele4=document.getElementById("d").value;
+                ele5=document.getElementById("e").value;
+                ele6=document.getElementById("f").value;
+                ele7=document.getElementById("g").value;
+                ele8=document.getElementById("h").value;
+                ele9=document.getElementById("i").value;
+            
+            if(ele1=="x" && ele2=="x" && ele3=="x")
+            {
+                    alert("X Has Won");
+            }
+            else if(ele1=="o" && ele2=="o" && ele3=="o")
+            {
+                alert("O won");
+            }
+            else if(ele4=="x" && ele5=="x" && ele6=="x")
+            {
+                alert("X won");
+            }
+            else if(ele4=="o" && ele5=="o" && ele6=="o")
+            {
+                alert("o won");
+            }
+            else if(ele7=="x" && ele8=="x" && ele9=="x")
+            {
+                alert("X won");
+            }
+            else if(ele7=="o" && ele8=="o" && ele9=="o")
+            {
+                alert("o won");
+            }
+            else if(ele1=="x" && ele4=="x" && ele7=="x")
+            {
+                alert("x  won");
+            }
+            else if(ele1=="o" && ele4=="o" && ele7=="o")
+            {
+                alert("o won");
+            }
+            else if(ele2=="x" && ele5=="x" && ele8=="x")
+            {
+                alert("X won");
+            }
+            
+            else if(ele2=="o" && ele5=="o" && ele8=="o")
+            {
+                alert("o won");
+            }
+
+            else if(ele3=="x" && ele6=="x" && ele9=="x")
+            {
+                alert("X won");
+            }
+            else if(ele3=="o" && ele6=="o" && ele9=="o")
+            {
+                alert("o won");
+            }
+            else if(ele1=="x" && ele5=="x" && ele9=="x")
+            {
+                alert("x won");
+            }
+            else if(ele1=="o" && ele5=="o" && ele9=="o")
+            {
+                alert("o won");
+            }
+            else if(ele3=="x" && ele5=="x" && ele7=="x")
+            {
+                alert("x won");
+            }
+            
+            else if(ele3=="o" && ele5=="o" && ele7=="o")
+            {
+                alert("o won");
+            }
+        }
+        </script>
+    </body>
+</html>
